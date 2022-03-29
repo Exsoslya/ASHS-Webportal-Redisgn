@@ -2,8 +2,13 @@
 <html>
     <head>
       <link href="style.css" rel="stylesheet">
-        <img src="https://www.ashs.school.nz/wp-content/uploads/sites/121/2020/07/Our-school.jpeg" width="1520px" height= "500px" alt="Photo of stairs inside the school"> </div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz_1dlNtbh58-j6YkuiBaUaVZmNi6y--UUV-T7s6L_voEJ04PLy7d-59kxth97P9jBKzk&usqp=CAU" alt="ASHS Logo">
+      <div class = "stairs">
+        <div id = "photo of stairs"><img src="https://www.ashs.school.nz/wp-content/uploads/sites/121/2020/07/Our-school.jpeg" width="1520px" height= "500px" alt="Photo of stairs inside the school"> </div>
+      </div>  
+      <div class = "schoollogo">
+       <div id="Logo" > <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz_1dlNtbh58-j6YkuiBaUaVZmNi6y--UUV-T7s6L_voEJ04PLy7d-59kxth97P9jBKzk&usqp=CAU" alt="ASHS Logo"></div>
+      </div>
+      
     </head>
 
     <body>
@@ -16,5 +21,53 @@
             <li><a href=Opportunities.html>Opportunities</a></li>
           </ul>
 
+<<<<<<< Updated upstream
+          <p style="color:white">Albany Senior High School is a state coeducational senior secondary school situated in North Harbour, Auckland, New Zealand. Opened in February 2009,[3] it was New Zealand's first state senior secondary school, catering for students in Years 11 to 13 (ages 14 to 18) only; most New Zealand secondary schools traditionally cater for Years 9 to 13. As of November 2021, the school has a roll of 798 students.[1]</p>
+=======
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+<p>Albany Senior High School is a state coeducational senior secondary school situated in North Harbour, Auckland, New Zealand. Opened in February 2009,[3] it was New Zealand's first state senior secondary school, catering for students in Years 11 to 13 (ages 14 to 18) only; most New Zealand secondary schools traditionally cater for Years 9 to 13. As of November 2021, the school has a roll of 798 students.[1]</p>
+>>>>>>> Stashed changes
     </body>
 </html>
