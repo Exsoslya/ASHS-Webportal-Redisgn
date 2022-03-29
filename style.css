@@ -28,3 +28,7 @@ li a:hover {
 .active {
   background-color: red;
 }
+.stairs{
+ width: 1980;
+ height: 500;
+}
