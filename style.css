@@ -53,3 +53,8 @@ th{
   background-color:#343A40;
   color:white;
 }
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
