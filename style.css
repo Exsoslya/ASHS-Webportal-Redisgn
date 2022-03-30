@@ -39,5 +39,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   }
  table, th, td {
   border:1px solid black;
-  background-color: bisque;
+  background-color: white;
+}
+p{
+  color:white;
 }
