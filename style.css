@@ -59,9 +59,3 @@ table {
   margin-right: auto;
   align-self: center;
 }
-div {
-  max-width: 768px;
-  max-height: 1024px;
-  margin: auto;
-  display: block;
-}
