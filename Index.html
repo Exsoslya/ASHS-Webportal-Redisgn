@@ -73,6 +73,68 @@
 </div>
           </ul>
 
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="https://supermodel-bestawards.s3.amazonaws.com/resized/migrated/entry/1448/Albany_SHS_Ext_night-0-1172-0-826.jpg?k=a3f339e08e" style="width:100%">
+              <div class="text">Outside of school</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="https://live.staticflickr.com/4115/4892067925_701298e5e3_b.jpg" style="width:100%">
+              <div class="text">Inside of school</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="http://ashs.kiwischools.com/wp-content/uploads/sites/121/2020/07/Impact-Projects-%E2%80%9CAlbany-Clean-Up%E2%80%9D-project.jpg" style="width:100%">
+              <div class="text">Students</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            
+
           <p style="color:white">Albany Senior High School is a state coeducational senior secondary school situated in North Harbour, Auckland, New Zealand. Opened in February 2009,[3] it was New Zealand's first state senior secondary school, catering for students in Years 11 to 13 (ages 14 to 18) only; most New Zealand secondary schools traditionally cater for Years 9 to 13. As of November 2021, the school has a roll of 798 students.[1]</p>
 </body>
 </html>
