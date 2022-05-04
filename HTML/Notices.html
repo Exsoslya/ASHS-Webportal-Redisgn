@@ -101,9 +101,60 @@
           <h1>Notices</h1>
 
           <h4>Friday 7th of April 2022</h4>
-          <p>Today we have boys football practice out on the field, we need as many boys as possible come check it out!</p>
+          <p>Today we have boys football practice out on the field after school until 5pm, we need as many boys as possible come check it out!</p>
+          <br>
+          <h4>Wednesday May 4th</h4>
+          <p>The lumino dentist van is here from now until the 4th of June.</p>
         </div>
-        <img src="Images/IMG-6989.jpg" alt="ASHS Logo" width="400"></div>
+        <style>
+          .container {
+            position: relative;
+            width: 50%;
+          }
+          
+          .image {
+            display: block;
+            width: 100%;
+            height: auto;
+          }
+          
+          .overlay {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            background-color: #008CBA;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .5s ease;
+          }
+          
+          .container:hover .overlay {
+            bottom: 0;
+            height: 100%;
+          }
+          
+          .text {
+            white-space: nowrap; 
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+          }
+          </style>
+
+        <div class="container">
+        <img src="Images/IMG-6989.jpg" alt="ASHS Logo" width="400" class="image">
+        <div class="overlay">
+          <div class="text">Hello fellow</div>
+        </div>
+      </div>
+    </div>
 
         <footer class="footer-dark">
           <p>2022 | <a href="https://www.ashs.school.nz/" target="_blank">Albany Senior High School</a> | Notices</p>
