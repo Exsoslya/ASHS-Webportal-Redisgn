@@ -11,6 +11,7 @@ background-color: rgb(44, 44, 42);
 
 li {
 float: left;
+font: 16px Helvetica;
 }
 
 li a {
@@ -36,7 +37,7 @@ height: 0px;
 }
 
 .schoollogo{
-height: 0px;
+height: 310px;
 }
 
 table, th, td {
@@ -160,7 +161,7 @@ to {opacity: 1}
 /* Bordered form */
 form {
 height: 15%;
-text-align: right;
+text-align: center;
 }
 
 
