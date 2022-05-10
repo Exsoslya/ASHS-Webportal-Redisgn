@@ -1,9 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+    <head>
+      <link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/media/FPnZD0gaUAIG5wI?format=png&name=small">
+      <link href="CSS/style.css" rel="stylesheet">
+      <div class = "stairs">
+        <div id = "photo of stairs"><img src="Images/Untitled-1.jpg" width="100%" height= "100%" alt="Photo of stairs inside the school"> </div>
+      </div>  
+      <div class = "schoollogo">
+        <div id="Logo" > <img src="Images/AshsLogoTransparent.png" alt="ASHS Logo" width="450px" height="225"></div>
+       </div>
 
-</head>
-<body>
-    
-</body>
+       <script src="JS.js"></script>
+       <script>
+          function buttonclick() {
+            var buttonclicking = 2
+            alert ("Im number 2")
+          }
+       </script>
+
+       <style>
+        .dropbtn {
+          background-color: rgb(44, 44, 42);
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+        
+        .dropdown {
+          position: bottom;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #ddd;}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        .dropdown:hover .dropbtn {background-color: rgb(51, 51, 51);}
+        </style>
+    </head>
+    <body>
+      <ul>
+        <li><a href=Index.html>Home</a></li>
+        <li><a href=Notices.html>Notices</a></li>
+        <li><a href=Timetable.html>Timetable</a></li>
+        <div class="dropdown">
+        <li><a href=Results.html>Results</a> <button class="dropbtn"></button>
+          <div class="dropdown-content">
+            <a href=NCEAS.html class="active">NCEA Summary</a>
+            <a href="#">Current Year Result</a>
+            <a href="#">All Results</a>
+          </div>
+        </div></li>
+        <li><a href=Opportunities.html>Opportunities</a></li>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+          </ul>
+          <footer class="footer-dark">
+            <p>2022 | <a href="https://www.ashs.school.nz/" target="_blank">Albany Senior High School</a> | NCEA</p>
+          </footer>
+    </body>
 </html>
