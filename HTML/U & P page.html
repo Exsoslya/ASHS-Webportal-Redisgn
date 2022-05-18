@@ -1,18 +1,140 @@
-<link href="CSS/style.css" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/media/FPnZD0gaUAIG5wI?format=png&name=small">
+      <link href="CSS/style.css" rel="stylesheet">
+      <div class = "stairs">
+        <div id = "photo of stairs"><img src="Images/Untitled-1.jpg" width="100%" height= "100%" alt="Photo of stairs inside the school"> </div>
+      </div>  
+      <div class = "schoollogo">
+        <div id="Logo" > <img src="Images/AshsLogoTransparent.png" alt="ASHS Logo" width="450px" height="225"></div>
+      </div>
+ 
+       <script src="JS.js"></script>
+<style>
+  .schoollogo{
+height: 0px;
+}
+.container {
+padding: 16px;
+height: 375px;
+}
+form {
+text-align: right;
+}
+p{
+  text-align: left;
+}
+</style>
+</head>
+<body>
+<form method="post" action="Index.html" height="1000px">
 
-<form method="post" action="Index.html">
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+<br>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+<br>
+    <button type="submit" onclick="buttonclick">Login</button>
+<br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+</body>
+<body>
 
-    <div class="container" >
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-  <br>
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-  <br>
-      <button type="submit" onclick="buttonclick">Login</button>
-  <br>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
+  
+  <!--Random comment-->
 
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="https://supermodel-bestawards.s3.amazonaws.com/resized/migrated/entry/1448/Albany_SHS_Ext_night-0-1172-0-826.jpg?k=a3f339e08e" style="width:100%">
+              <div class="text">Outside of school</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://live.staticflickr.com/4115/4892067925_701298e5e3_b.jpg" style="width:100%">
+              <div class="text">Inside of school</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="http://ashs.kiwischools.com/wp-content/uploads/sites/121/2020/07/Impact-Projects-%E2%80%9CAlbany-Clean-Up%E2%80%9D-project.jpg" style="width:100%">
+              <div class="text">Students</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            var p = 5500
+
+            showsSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showsSlides(slideIndex += n);
+              var p = 5500
+            }
+            
+            function currentSlide(n) {
+              showsSlides(slideIndex = n);
+            }
+
+
+
+            function showsSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, p); // Change image every 5 seconds
+}
+            </script>
+        
+          <p style="color:white">Albany Senior High School is a state coeducational senior secondary school situated in North Harbour, Auckland, New Zealand. Opened in February 2009,[3] it was New Zealand's first state senior secondary school, catering for students in Years 11 to 13 (ages 14 to 18) only; most New Zealand secondary schools traditionally cater for Years 9 to 13. As of November 2021, the school has a roll of 798 students.</p>
+          
+          <footer class="footer-dark">
+            <p>2022 | <a href="https://www.ashs.school.nz/" target="_blank">Albany Senior High School</a> | Home</p>
+          </footer>
+</body>
+</html>

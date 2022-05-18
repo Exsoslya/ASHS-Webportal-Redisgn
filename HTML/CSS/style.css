@@ -1,5 +1,6 @@
 body {
   background-color: rgb(44, 44, 42);
+  text-align: left;
 }
 ul {
 list-style-type: none;
@@ -153,11 +154,6 @@ to {opacity: 1}
 .prev, .next,.text {font-size: 11px}
 }
 /* Bordered form */
-form {
-height: 15%;
-text-align: center;
-}
-
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
@@ -194,6 +190,7 @@ background-color: #f44336;
 /* Add padding to containers */
 .container {
 padding: 16px;
+height: 315px;
 }
 
 /* The "Forgot password" text */
