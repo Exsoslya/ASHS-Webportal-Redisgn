@@ -5,7 +5,7 @@
       <link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/media/FPnZD0gaUAIG5wI?format=png&name=small">
       <link href="CSS/style.css" rel="stylesheet">
       <div class = "stairs">
-        <div id = "photo of stairs"><img src="Images/Untitled-1.jpg" width="100%" height= "100%" alt="Photo of stairs inside the school"> </div>
+        <div id = "photo of stairs"><img src="Images/Untitled-1.jpg" width="100%" height= "100%" alt="Photo of stairs inside the school" style="border-radius: 0px"> </div>
       </div>  
       <div class = "schoollogo">
         <div id="Logo" > <img src="Images/AshsLogoTransparent.png" alt="ASHS Logo" width="450px" height="225"></div>
@@ -50,9 +50,11 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: rgb(44, 44, 42);}
+
 img{
   border-radius: 20px;
 }
+
 </style>
 </head>
 
@@ -76,21 +78,26 @@ img{
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
           </ul>
-
           <div class="slideshow-container">
 
             <div class="mySlides fade">
+              <div class="Slide">
               <img src="https://supermodel-bestawards.s3.amazonaws.com/resized/migrated/entry/1448/Albany_SHS_Ext_night-0-1172-0-826.jpg?k=a3f339e08e" style="width:100%">
+              </div>
               <div class="text">Outside of school</div>
             </div>
             
             <div class="mySlides fade">
-              <img src="https://live.staticflickr.com/4115/4892067925_701298e5e3_b.jpg" style="width:100%">
+              <div class="Slide">
+              <img src="https://live.staticflickr.com/4115/4892067925_701298e5e3_b.jpg" style="width:100%" style="border-radius: 20px">
+              </div>
               <div class="text">Inside of school</div>
             </div>
             
             <div class="mySlides fade">
+              <div class="Slide">
               <img src="http://ashs.kiwischools.com/wp-content/uploads/sites/121/2020/07/Impact-Projects-%E2%80%9CAlbany-Clean-Up%E2%80%9D-project.jpg" style="width:100%">
+              </div>
               <div class="text">Students</div>
             </div>
             
@@ -98,6 +105,7 @@ img{
             <a class="next" onclick="plusSlides(1)">❯</a>
             
             </div>
+            
             <br>
             
             <div style="text-align:center">
