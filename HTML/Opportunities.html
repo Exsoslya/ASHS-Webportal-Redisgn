@@ -81,8 +81,7 @@ body {
 .card {
   display: flex;
   height: 280px;
-  width: 600px;
-  background-color: #17141d;
+  width: 260px;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
 /*   margin-left: -50px; */
@@ -133,7 +132,7 @@ body {
   width: 0px;
   height: 100%;
   background: rgb(0,154,217);
-  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  background: linear-gradient(90deg, cyan 0%, pink 65%, purple 100%);
   transition: 0.6s ease-out;
 }
 
@@ -152,6 +151,18 @@ body {
 .card:hover .stroke {
   stroke-dashoffset: 100;
   transition: 0.6s ease-out;
+}
+.card2{
+background-color: green;
+border-radius: 10px;
+}
+.card3{
+background-color: crimson;
+border-radius: 10px;
+}
+.card1{
+background-color: gold;
+border-radius: 10px;
 }
         </style>
 
@@ -178,6 +189,7 @@ body {
         <br>
 
         <div class="container">
+        <div class="card1">
           <div class="card">
             <h3 class="title">Band</h3>
             <div class="bar">
@@ -187,6 +199,9 @@ body {
             </div>
           
           </div>
+        </div>
+
+        <div class="card2">
           <div class="card">
             <h3 class="title">Football</h3>
             <div class="bar">
@@ -194,8 +209,22 @@ body {
               <div class="emptybar">If you are interested in playing football (No matter what gender) tryouts will be on the field at lunch time today.</div>
               <div class="filledbar"></div>
             </div>
+
+           </div>
+        </div>
+
+          <div class="card3">
+           <div class="card">
+             <h3 class="title">Netball</h3>
+             <div class="bar">
+               <br>
+               <div class="emptybar">If you are interested in playing netball tryouts will be in the gym at lunch time today.</div>
+               <div class="filledbar"></div>
+             </div>
             
           </div>
+        </div>
+
         </div>
         
         <br>
