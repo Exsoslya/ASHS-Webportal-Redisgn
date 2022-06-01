@@ -10,7 +10,7 @@ overflow: hidden;
 background-color: rgb(44, 44, 42);
 }
 
-li {
+.li {
 float: left;
 font: 16px Helvetica;
 }
@@ -215,8 +215,14 @@ label{
 color: white;
 }
 
-  .footer-dark {background:rgb(27, 26, 26); color:rgb(255, 255, 255); padding:10px; }
+.footer-dark {
+background:rgb(27, 26, 26); color:rgb(255, 255, 255); padding:10px; 
+}
 
 h4{
   color: white;
+}
+.logout{
+  background-color: #b42424;
+  float: right;
 }
